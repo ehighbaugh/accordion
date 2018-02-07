@@ -1,49 +1,44 @@
-/********* BASIC STYLES **********/
+/* BASIC STYLES */
 
 body {
-    margin: 2em auto;
+    margin: 4em auto;
     width: 80%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-/********* ACCORDION **********/
-/* Style the buttons that are used to open and close the accordion panel */
+/* ACCORDION STYLES */
 .accordion {
     background-color: #eee;
-    color: #333;
+    color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
+    text-align: left;
     outline: none;
+    font-size: 1.1em;
     transition: 0.4s;
-    font-size: 1em;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #ccc; 
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 10px;
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
 }
 
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
     display: none;
-    max-height: 0;
+    background-color: white;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
